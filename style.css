@@ -51,8 +51,9 @@ nav {
   font-variant: normal;
   text-transform: uppercase;
   color: #666666;
-  font-size: 180%;
-  margin-left: 20px; }
+  font-size: 160%;
+  margin-left: 20px; 
+}
 
 .headerText:hover {
   text-decoration: none; }
