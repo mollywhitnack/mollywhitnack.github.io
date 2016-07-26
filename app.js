@@ -1,7 +1,5 @@
 'use strict';
 
-require('dotenv').config();
-
 const PORT = process.env.PORT || 8000;
 
 let express = require('express');
@@ -12,21 +10,12 @@ let logger = require('morgan');
 let cookieParser = require('cookie-parser');
 let bodyParser = require('body-parser');
 
-let MONGO_URL = process.env.MONGODB_URI || 'mongodb://localhost/social-login';
-
-require('mongoose').connect(MONGO_URL, err => {
-  console.log(`MongoDB connected to ${MONGO_URL}`);
-});
-
 let app = express();
 let server = http.createServer(app);
 
 server.listen(PORT, err => {
   console.log(err || `Server listening on port ${PORT}`);
 });
-
-app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'ejs');
 
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 app.use(logger('dev'));
@@ -42,10 +31,10 @@ app.use((req, res, next) => {
   next();
 })
 
-app.use('/api', require('./routes/api'));
+//app.use('/api', require('./routes/api'));
 
 app.get('/', (req, res) => {
-  res.render('index', {title: 'Template'});
+  res.render('index', {title: 'Molly Whitnack'});
 });
 
 // catch 404 and forward to error handler

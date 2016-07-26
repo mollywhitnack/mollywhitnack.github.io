@@ -1,6 +1,11 @@
 'use strict';
 
-let app = angular.module('myApp');
+
+var app = angular.module('myApp', ['mgcrea.ngStrap', 'ui.router'])
+.run(['$anchorScroll', function($anchorScroll) {
+  $anchorScroll.yOffset = 50;   // always scroll by 50 extra pixels
+}])
+
 
 app.controller('mainCtrl', function($scope, $location, $anchorScroll) {
 
@@ -35,5 +40,3 @@ app.directive("myNavscroll", function($window) {
         });
     };
 });
-
-
