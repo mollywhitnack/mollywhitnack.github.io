@@ -1,112 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>Molly Whitnack</title>
 
-  <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <script src="https://use.fontawesome.com/547ac24cdb.js"></script>
 
-  <script src="/bower_components/angular/angular.js"></script>
-  <script src="/bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
-  <script src="/bower_components/satellizer/satellizer.min.js"></script>
-  <script src="/bower_components/angular-strap/dist/angular-strap.min.js"></script>
-  <script src="/bower_components/angular-strap/dist/angular-strap.tpl.min.js"></script>
-  <script src="https://use.fontawesome.com/547ac24cdb.js"></script>
-  <script src="main.js"></script>
+    <title>Scrolling Nav - Start Bootstrap Template</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/scrolling-nav.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 
 </head>
-<body ng-app='myApp' ng-controller='mainCtrl' id="page">
 
+<!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
 
-   <header  data-my-navscroll  ng-class="{min:boolChangeClass}">
-  <nav class="navbar navbar-default" role="navigation" bs-navbar>
-    <ul class="nav navbar-nav navbar-left initals">
-      <a href ="" ng-click="gotoAnchor(1)" class = "initial"> MW </button>
-    </ul>
-    <ul class="nav navbar-nav navbar-right">
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
-      <div class="fixed-header">
-        <a class="headerText" href="" ng-click="gotoAnchor(2)"> About </a>
-        <a class="headerText" href="" ng-click="gotoAnchor(3)"> Projects </a>
-        <a class="headerText" href="" ng-click="gotoAnchor(4)"> Resume </a>
-      </div>
-    </ul>
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">MW</a>
+            </div>
 
-  </nav>
-    </header>
-    <section></section>
-    
-
-    <div id="anchor1" class="anchor">
-      <div class = "container">     
-        <div class= "title"> Molly Whitnack</div>
-        <div class="subTitle">Full Stack Javascript Developer 
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a class="page-scroll" href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#services">Projects</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Resume</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
         </div>
-        <br>
+        <!-- /.container -->
+    </nav>
 
-     <div class = "row ">
-        <a href ="https://angel.co/molly-whitnack"><i class="fa fa-angellist fa-2x hover" aria-hidden="true"><p class = "text"></p></i></a>
-        <a href ="https://twitter.com/MollyWhitnack"><i class="fa fa-twitter fa-2x hover" aria-hidden="true"><p class = "text"></p></i></a>
-        <a href = "https://github.com/mollywhitnack"><i class="fa fa-github fa-2x hover" aria-hidden="true"><p class = "text"></p></i></a>
-        <!--<a href="https://www.quora.com/profile/Molly-Whitnack-1" id = "qoura">Q</a>-->
-        <a href = "http://stackoverflow.com/users/6073965/molly-whitnack"><i class="fa fa-stack-overflow fa-2x hover" aria-hidden="true"><p class = "text"></p></i></a>
-        <a href="https://www.linkedin.com/in/molly-whitnack-55525b9a"><i class="fa fa-linkedin fa-2x hover" aria-hidden="true"><p class = "text"></p></i></a>
-      </div>
-        
-        <footer>
-       <p>mollywhitnack@gmail.com</p>
-      </footer>
+    <!-- Intro Section -->
+    <section id="intro" class="intro-section">
+        <div class="container">
+            <div class= "title"> Molly Whitnack</div>
+            <div class="subTitle">Full Stack Javascript Developer 
+            </div>
+            <footer>
+             <p>mollywhitnack@gmail.com</p>
+            </footer>
+
+            <div class = "row faicons">
+                <a href ="https://angel.co/molly-whitnack"><i class="fa fa-angellist fa-2x hover" aria-hidden="true"><p class = "text"></p></i></a>
+                <a href ="https://twitter.com/MollyWhitnack"><i class="fa fa-twitter fa-2x hover" aria-hidden="true"><p class = "text"></p></i></a>
+                <a href = "https://github.com/mollywhitnack"><i class="fa fa-github fa-2x hover" aria-hidden="true"><p class = "text"></p></i></a>
+                <a href = "http://stackoverflow.com/users/6073965/molly-whitnack"><i class="fa fa-stack-overflow fa-2x hover" aria-hidden="true"><p class = "text"></p></i></a>
+                <a href="https://www.linkedin.com/in/molly-whitnack-55525b9a"><i class="fa fa-linkedin fa-2x hover" aria-hidden="true"><p class = "text"></p></i></a>
+            </div>
+
+ 
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class = "container aboutCont text-center">  
+              <span class = 'about text-center'>I am a critical-thinker, dependable, and sociable new graduate eager to obtain position as a full stack developer
+                <br> I love traveling, hanging out with my dogs and bulding things with my Arduinos
+                <br> I attended UCSD, where I received a B.S. in physics with a specialization in astrophysics and a minor in computer science.
+                <br> 
+                <br> Javascrpt | HTML | CSS | Mongo | Express | Angular | Node  | React
+                <br>Let me build something for you!
+              </span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class = 'container'>
+           <div class = "row">
+            <div class ='col-xs-6 col-md-4 projects text-center'><a href = 'https://polar-peak-84257.herokuapp.com/#/business'> Yelp Favorites<img src = "https://i.imgur.com/c2tqOt8.png" class= 'projectimg'></div>
+            <div class ='col-xs-6 col-md-4 projects text-center'> <a href = "https://radiant-cove-77490.herokuapp.com/#/"> Cards Against Humanity<img src = "https://i.imgur.com/JRm2SUw.png" class= 'projectimg'></a></div>
+            <div class ='col-xs-6 col-md-4 projects text-center'> <a href = "https://dazzling-cuyahoga-valley-95889.herokuapp.com/#/albums"> Photo Album<img src = "https://i.imgur.com/vcSFNuj.png" class= 'projectimg'></a></div>
         </div>
     </div>
 
-    <div id="anchor2" class="anchor">
-    <br><br>
-      <div class = "container aboutCont text-center">  
-        <span class = 'about text-center'>I am a critical-thinker, dependable, and sociable new graduate eager to obtain position as a full stack developer!
-        <br> I love traveling, hanging out with my dogs and bulding things with my Arduinos
-        <br> I attended UCSD, where I received a B.S. in physics with a specialization in astrophysics and a minor in computer science.
-        <br> 
-        <br> Javascrpt | HTML | CSS | Mongo | Express | Angular | Node  | React
-          <br>Let me build something for you! <br>
-        </span>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+    <div class="container">
+            <div class = "text-center resumeFrame">
+              <iframe src="https://docs.google.com/document/d/1xuZ3U1xNkojCjbw8nDBxzsU05K3FI-0oxvD8QE-mCos/pub?embedded=true" frameborder="0"></iframe>
+          </div>
       </div>
-    </div>
-    
+  </section>
 
-   <div id="anchor3" class="anchor">
-   <div class = 'container'>
-     <div class = "row">
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
 
-        <div class ='col-xs-6 col-md-4 projects text-center'><a href = 'https://polar-peak-84257.herokuapp.com/#/business'> Yelp Favorites<img src = "https://i.imgur.com/c2tqOt8.png" class= 'projectimg'>
-        </div>
-   
-        <div class ='col-xs-6 col-md-4 projects text-center'> <a href = "https://radiant-cove-77490.herokuapp.com/#/"> Cards Against Humanity<img src = "https://i.imgur.com/JRm2SUw.png" class= 'projectimg'></a></div>
-        <div class ='col-xs-6 col-md-4 projects text-center'> <a href = "https://dazzling-cuyahoga-valley-95889.herokuapp.com/#/albums"> Photo Album<img src = "https://i.imgur.com/vcSFNuj.png" class= 'projectimg'></a></div>
-      </div>
-    </div>
-    </div>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
 
-
-   <div id="anchor4" class="anchor">
-    <div class = "text-center resumeFrame">
-      <iframe src="https://docs.google.com/document/d/1xuZ3U1xNkojCjbw8nDBxzsU05K3FI-0oxvD8QE-mCos/pub?embedded=true" frameborder="0"></iframe>
-    </div>
-  </div>
-
-  <!-- <div id="anchor5" class="anchor">
-    <div class = 'container text-center'>
-     <div class = "row">
-        <div class="col-md-4" id ="wrapper"><a href ="https://angel.co/molly-whitnack"><i class="fa fa-angellist fa-2x hover" aria-hidden="true"><p class = "text"></p></i></a></div>
-        <div class="col-md-4" id ="wrapper">  <a href ="https://twitter.com/MollyWhitnack"><i class="fa fa-twitter fa-2x hover" aria-hidden="true"><p class = "text"></p></i></a></div>
-        <div class="col-md-4" id ="wrapper"><a href = "https://github.com/mollywhitnack"><i class="fa fa-github fa-2x hover" aria-hidden="true"><p class = "text"></p></i></a></div>
-         <div class="col-md-4" id ="wrapper2"><a href="https://www.quora.com/profile/Molly-Whitnack-1" id = "qoura">Q</a><p class = "text"></p></div>
-         <div class="col-md-4" id ="wrapper"><a href = "http://stackoverflow.com/users/6073965/molly-whitnack"><i class="fa fa-stack-overflow fa-2x hover" aria-hidden="true"><p class = "text"></p></i></a></div>
-         <div class="col-md-4" id ="wrapper"><a href="https://www.linkedin.com/in/molly-whitnack-55525b9a"><i class="fa fa-linkedin fa-2x hover" aria-hidden="true"><p class = "text"></p></i></a></div>
-      </div>
-      
-      </div>
-    </div>-->
+    <!-- Scrolling Nav JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/scrolling-nav.js"></script>
 
 </body>
+
 </html>
