@@ -41,9 +41,10 @@ html {
 
 
 
-    .top-nav-collapse {
-        padding: 0;
-    }
+.top-nav-collapse {
+  padding: 0;
+}
+
 }
 
 #initials{
@@ -192,6 +193,7 @@ i.fa {
 .col-fixed {
     /* custom width */
     width:380px;
+    vertical-align: top;
 }
 
 .contact-section {
@@ -201,16 +203,25 @@ i.fa {
     background: #eee;
 }
 
+
 iframe {
   width: 90%;
   height:500px;
 }
 
 
+@media screen and (max-width: 890px){
+.services-section{
+    padding-top: 60px;
+    height: 115%;
+  }
+
+}
+
 
 @media screen and (max-width: 460px) {
   .title {
-    padding-top: 14%;
+    padding-top: 15%;
   }
   .about-section{
     padding-top: 40px;
@@ -234,12 +245,6 @@ iframe {
 
 } 
 
-@media screen and (max-width: 890px) {
-.services-section{
-    padding-top: 40px;
-    height: 150%;
-  }
-}
 
 
 
