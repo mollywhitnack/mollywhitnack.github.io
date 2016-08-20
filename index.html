@@ -9,6 +9,9 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <script src="https://use.fontawesome.com/547ac24cdb.js"></script>
+    <script type="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenLite.min.js"</script>
+    <script type="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/CSSPlugin.min.js"</script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
     <title>Molly Whitnack</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/scrolling-nav.css" rel="stylesheet">
@@ -36,10 +39,10 @@
                         <a class="page-scroll" href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#about">About</a>
+                        <a class="page-scroll" href="#about">Projects</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#services">Projects</a>
+                        <a class="page-scroll" href="#services">About</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#contact">Resume</a>
@@ -73,36 +76,107 @@
 
     <!-- About Section -->
     <section id="about" class="about-section">
-        <div class="container">
-            <div class = "container aboutCont text-center">  
-              <span class = 'about text-center'>I am a critical-thinker, dependable, and sociable new graduate eager to obtain position as a full stack developer
-                <br>
-                <br> I love traveling, hanging out with my dogs and bulding things with my Arduinos
-                <br> I attended UCSD, where I received a B.S. in physics with a specialization in astrophysics and a minor in computer science.
-                <br> 
-                <br> Javascrpt | HTML | CSS | Mongo | Express | Angular | Node  | React
-                <br>
-                <br>Let me build something for you!
-              </span>
-            </div>
-        </div>
-    </section>
+    <div class = "container-fluid center">
+           <div class = "row text-center center">
+            
 
-    <!-- Services Section -->
-    <section id="services" class="services-section">
-        <div class = 'container top'>
-           <div class = "row row-centered">
-            
-            <div class ='col-xs-6 col-centered col-fixed projects'><a href = 'https://polar-peak-84257.herokuapp.com/#/business' target="_blank"> Yelp Favorites
-                <img src = "https://i.imgur.com/c2tqOt8.png" class= 'projectimg'></a>
-                <br> Search for businesses, add them to favotires for you to remember and other users to see
-                <br> Built with Angular, Bootstrap, Gulp, MongoDB
-                <br><a href="https://github.com/mollywhitnack/refactoredYelp" target="_blank">                    
-                Github <span class="fa fa-github fa-2x hover" aria-hidden="true"> </span>
+            <span class ='cardWrapper'>
+                <div class = "card">
+                <div class="cardFace front"><p class="projFont">Cards against humanity</p>
+                     <img src = "https://i.imgur.com/JRm2SUw.png" class= 'projectimg'>
+                </div>
+                <div class="cardFace back">
+                <a href = 'https://radiant-cove-77490.herokuapp.com/#/' target="_blank"> Link</a>
+                    <p> Search for businesses, add them to favotires for you to remember and other users to see
+                    Built with Angular, Bootstrap, Node.js</p>
+                    <a href="https://github.com/mollywhitnack/cardsagainsthumanity" target="_blank">
+                     <span class="fa fa-github fa-3x hover" aria-hidden="true"> </span>
+                </div>
                 </a>
-            </div>
-            
-            <div class ='col-xs-6 col-centered col-fixed projects'> <a href = "https://radiant-cove-77490.herokuapp.com/#/" target="_blank"> Cards Against Humanity 
+                </div>
+            </span>
+
+            <span class ='cardWrapper'>
+                <div class = "card">
+                <div class="cardFace front"><p class="projFont">The Daily Feels</p>
+                     <img src = "http://i.imgur.com/d4rQ7Cz.png" class= 'projectimg'>
+                </div>
+                <div class="cardFace back">
+                <a href = 'https://the-daily-feels.herokuapp.com/' target="_blank"> Link</a>
+                    <h5>Emotion Sensitive News Search Engine</h5>
+                    <p>Built with React and Redux</p>
+                <br><a href="https://github.com/mollywhitnack/the-daily-feels" target="_blank">                    
+                 <span class="fa fa-github fa-3x hover" aria-hidden="true"> </span>
+                </div>
+                </a>
+                </div>
+            </span>
+
+            <span class ='cardWrapper'>
+                <div class = "card">
+                <div class="cardFace front"><p class="projFont">Mancala</p>
+                     <img src = "http://i.imgur.com/Gu13ATIr.png" class= 'projectimg'>
+                </div>
+                <div class="cardFace back">
+                <a href = 'https://mancala1991.herokuapp.com' target="_blank"> Link</a>
+                   <p> Built with React, Flux, Bootstrap, MongoDB </p>
+                <br><a href="https://github.com/mollywhitnack/Mancala" target="_blank">
+                 <span class="fa fa-github fa-3x hover" aria-hidden="true"> </span>
+                </div>
+                </a>
+                </div>
+            </span>
+
+            <span class ='cardWrapper'>
+                <div class = "card">
+                <div class="cardFace front"><p class="projFont">Yelp Favorites</p>
+                     <img src = "https://i.imgur.com/c2tqOt8.png" class= 'projectimg'>
+                </div>
+                <div class="cardFace back">
+                <a href = 'https://polar-peak-84257.herokuapp.com/#/business' target="_blank"> Link</a>
+                    <p> Search for businesses, add them to favotires for you to remember and other users to see
+                     Built with Angular, Bootstrap, Gulp, MongoDB</p>
+                <br><a href="https://github.com/mollywhitnack/refactoredYelp" target="_blank">                    
+                 <span class="fa fa-github fa-3x hover" aria-hidden="true"> </span>
+                </div>
+                </a>
+                </div>
+            </span>
+
+            <!--<span class ='cardWrapper'>
+                <div class = "card">
+                <div class="cardFace front"><p class="projFont">Cards against humanity</p>
+                     <img src = "https://i.imgur.com/JRm2SUw.png" class= 'projectimg'>
+                </div>
+                <div class="cardFace back">
+                <a href = 'https://radiant-cove-77490.herokuapp.com/#/' target="_blank"> Link</a>
+                    <p> Search for businesses, add them to favotires for you to remember and other users to see
+                    Built with Angular, Bootstrap, Node.js</p>
+                    <a href="https://github.com/mollywhitnack/cardsagainsthumanity" target="_blank">
+                     <span class="fa fa-github fa-3x hover" aria-hidden="true"> </span>
+                </div>
+                </a>
+                </div>
+            </span>
+
+            <span class ='cardWrapper'>
+                <div class = "card">
+                <div class="cardFace front"><p class="projFont">Mancala</p>
+                     <img src = "http://i.imgur.com/Gu13ATIr.png" class= 'projectimg'>
+                </div>
+                <div class="cardFace back">
+                <a href = 'https://mancala1991.herokuapp.com' target="_blank"> Link</a>
+                   <p> Built with React, Flux, Bootstrap, MongoDB </p>
+                <br><a href="https://github.com/mollywhitnack/Mancala" target="_blank">
+                 <span class="fa fa-github fa-3x hover" aria-hidden="true"> </span>
+                </div>
+                </a>
+                </div>
+            </span>-->
+   
+
+
+           <!-- <div class ='col-xs-6 col-centered col-fixed projects'> <a href = "https://radiant-cove-77490.herokuapp.com/#/" target="_blank"> Cards Against Humanity 
                 <img src = "https://i.imgur.com/JRm2SUw.png" class= 'projectimg'></a>
                 <br> Cards against humanity game 
                 <br> Built with Angular, Bootstrap, Node.js
@@ -121,12 +195,28 @@
                 Github <span class="fa fa-github fa-2x hover" aria-hidden="true"> </span>
                 </a>
             
-            </div>
+            </div>-->
         </div>
     </div>
 
     </section>
 
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <div class = "container aboutCont text-center">  
+              <span class = 'about text-center'>I am a critical-thinker, dependable, and sociable new graduate eager to obtain position as a full stack developer
+                <br>
+                <br> I love traveling, hanging out with my dogs and bulding things with my Arduinos
+                <br> I attended UCSD, where I received a B.S. in physics with a specialization in astrophysics and a minor in computer science.
+                <br> 
+                <br> Javascrpt | HTML | CSS | Mongo | Express | Angular | Node  | React
+                <br>
+                <br>Let me build something for you!
+              </span>
+            </div>
+        </div>        
+    </section>
 
 
 
