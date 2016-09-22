@@ -6,10 +6,26 @@ http://www.tooplate.com/view/2076-zentro
 
 */
 
+
+@font-face {
+    font-family: myFontBold;
+    src: url(../fonts/kollektif/Kollektif-Bold.ttf);
+}
+
+@font-face {
+    font-family: myFont;
+    src: url(../fonts/kollektif/Kollektif.ttf);
+}
+
+@font-face {
+    font-family: myFontSub;
+    src: url(../fonts/Gidole-Regular.ttf);
+}
+
 body
 	{
 		background: #ffffff;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'myFont';
     font-weight: 400;
     position: relative;
 	}
@@ -139,14 +155,16 @@ hr {
   text-align: center;
 }
 #home h1 {
-  font-size: 35px;
-  letter-spacing: 8px;
+  font-family: 'myFontBold';
+  font-size: 45px;
+  letter-spacing: 3px;
   font-style: normal;
   padding-top: 10px;
 }
 
 #home h2 {
-  font-size: 25px;
+  font-family: 'myFontSub';
+  font-size: 35px;
   letter-spacing: 8px;
   font-style: normal;
   padding-top: 10px;
@@ -172,6 +190,7 @@ hr {
 
 .project{
   padding: 10px;
+  padding-bottom: 0px;
   background-color: none;
 }
 
@@ -225,7 +244,15 @@ hr {
 #menu span {
   color: #5C5C5C;
 }
-
+.skills1{
+  color: black;
+}
+.skills2{
+  color:#4d4d4d
+}
+.skills3{
+  color:#8c8c8c
+}
 /* gallery section */
 #gallery {
   padding-top: 80px;
