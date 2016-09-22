@@ -211,6 +211,10 @@ hr {
   padding-top: 20px;
 }
 
+.address {
+  padding-top: 5px;
+}
+
 /* team section */
 #team {
   height: 100vh;
@@ -293,8 +297,9 @@ footer {
   background-size: cover;
   background-position: center;
   color: #ffffff;
-  padding-top: 40px;
-  padding-bottom: 80px;
+  padding-top: 70px;
+  padding-bottom: 60px;
+
 }
 footer h2 {
   padding-bottom: 14px;
@@ -304,6 +309,7 @@ footer h3 {
 }
 footer p {
   color: #ffffff;
+  font-size: 20px;
 }
 footer span {
   font-weight: bold;
@@ -312,9 +318,10 @@ footer span {
 footer .ph, footer .address {
   padding-top: 12px;
   padding-bottom: 12px;
+  font-size: 25px;
 }
 footer .fa {
-  font-size: 12px;
+  font-size: 20px;
   padding-right: 10px;
 }
 
