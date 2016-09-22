@@ -1,260 +1,254 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+	<meta charset="utf-8">
+	<title>Molly Whitnack</title>
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <script src="https://use.fontawesome.com/547ac24cdb.js"></script>
-    <script type="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenLite.min.js"</script>
-    <script type="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/CSSPlugin.min.js"</script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
-    <title>Molly Whitnack</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/scrolling-nav.css" rel="stylesheet">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
 
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/animate.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<!--<link rel="stylesheet" href="css/nivo-lightbox.css">-->
+	<link rel="stylesheet" href="css/nivo_themes/default/default.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,500' rel='stylesheet' type='text/css'>
 </head>
+<body>
+
+<!-- preloader section -->
+<section class="preloader">
+	<div class="sk-spinner sk-spinner-pulse"></div>
+</section>
+
+<!-- navigation section -->
+<section class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<div class="container">
+		<div class="navbar-header">
+			<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				<span class="icon icon-bar"></span>
+				<span class="icon icon-bar"></span>
+				<span class="icon icon-bar"></span>
+			</button>
+			<a href="#" class="navbar-brand">MW</a>
+		</div>
+		<div class="collapse navbar-collapse">
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="#gallery" class="smoothScroll">PROJECTS</a></li>
+				<li><a href="#menu" class="smoothScroll">RESUME</a></li>
+				<li><a href="#team" class="smoothScroll">ABOUT</a></li>
+				<li><a href="#contact" class="smoothScroll">CONTACT</a></li>
+			</ul>
+		</div>
+	</div>
+</section>
 
 
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+<!-- home section -->
+<section id="home" class="parallax-section">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 col-sm-12">
+				<h1>Molly Whitnack</h1>
+				<h2>Full Stack Javascript Developer</h2>
+				<ul class="social-icon">
+				<li><a href ="https://angel.co/molly-whitnack" target="_blank" class="fa fa-angellist wow bounceIn" data-wow-delay="0.3s"></a></li>
+					<li><a href ="https://twitter.com/MollyWhitnack" target="_blank" class="fa fa-twitter wow bounceIn" data-wow-delay="0.6s"></a></li>
+					<li><a href = "https://github.com/mollywhitnack" target="_blank" class="fa fa-github wow bounceIn" data-wow-delay="0.9s"></a></li>
+					<li><a href = "http://stackoverflow.com/users/6073965/molly-whitnack" target="_blank" class="fa fa-stack-overflow wow bounceIn" data-wow-delay="0.9s"></a></li>
+					<li><a href="https://www.linkedin.com/in/molly-whitnack-55525b9a" target="_blank" class="fa fa-linkedin wow bounceIn" data-wow-delay="0.9s"></a></li>
 
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-        <a class="navbar-brand page-scroll" id ="initials" href="#page-top">MW</a>
-        <div class="container">
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-            </div>
+				</ul>
 
-            <div class="collapse navbar-collapse navbar-ex1-collapse">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden">
-                        <a class="page-scroll" href="#page-top"></a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#about">Projects</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#services">About</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#contact">Resume</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <section id="intro" class="intro-section">
-        <div class="container">
-            <div class= "title"> Molly Whitnack</div>
-            <div class="subTitle">Full Stack Javascript Developer 
-            </div>
-            <br>
-            <footer>
-             <p>mollywhitnack@gmail.com</p>
-            </footer>
-
-            
- 
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about-section">
-        <h2 class = "projFont"> Projects</h2><br>
-    <div class = "container-fluid center">
-
-           <div class = "row text-center center">
-            <span class ='cardWrapper'>
-                <div class = "card">
-                <div class="cardFace front"><p class="projFont">Cards against humanity</p>
-                     <img src = "https://i.imgur.com/JRm2SUw.png" class= 'projectimg'>
-                </div>
-                <div class="cardFace back">
-                    <p> Multiplayer Cards Against Humanity Game
-                    Built with Angular, Bootstrap, Node.js</p>
-                    <a href="https://github.com/mollywhitnack/cardsagainsthumanity" target="_blank">
-                        <span class="fa fa-github fa-3x hover" aria-hidden="true">
-                    </a>
-                    <br>
-                    <a href = 'https://radiant-cove-77490.herokuapp.com/#/' target="_blank"> 
-                      <br><i class="fa fa-2x fa-chevron-right" aria-hidden="true"></i>
-                    </a>        
-                   </span>
-                </div>
-                </div>
-            </span>
-
-            <span class ='cardWrapper'>
-                <div class = "card">
-                <div class="cardFace front"><p class="projFont">The Daily Feels</p>
-                     <img src = "http://i.imgur.com/d4rQ7Cz.png" class= 'projectimg'>
-                </div>
-                <div class="cardFace back">
-                    <h5>Emotion Sensitive News Search Engine</h5>
-                    <p>Built with React and Redux</p>
-                 <a href="https://github.com/mollywhitnack/the-daily-feels" target="_blank">                    
-                    <span class="fa fa-github fa-3x hover" aria-hidden="true"> </span>
-                 </a>
-                 <br><a href = 'https://the-daily-feels.herokuapp.com/' target="_blank"> 
-                   <br> <i class="fa fa-2x fa-chevron-right" aria-hidden="true"></i>
-                 </a>
-                </div>
-                
-                </div>
-            </span>
-
-            <span class ='cardWrapper'>
-                <div class = "card">
-                <div class="cardFace front"><p class="projFont">Mancala</p>
-                     <img src = "http://i.imgur.com/Gu13ATIr.png" class= 'projectimg'>
-                </div>
-                <div class="cardFace back">
-                   <p> Built with React, Flux, Bootstrap, MongoDB </p>
-                <br><a href="https://github.com/mollywhitnack/Mancala" target="_blank">
-                 <span class="fa fa-github fa-3x hover" aria-hidden="true"> </span>
-                <br><a href = 'https://mancala1991.herokuapp.com' target="_blank"> 
-                <br><i class="fa fa-2x fa-chevron-right" aria-hidden="true"></i></a>
-                </div>
-                </a>
-                </div>
-            </span>
-
-            <span class ='cardWrapper'>
-                <div class = "card">
-                <div class="cardFace front"><p class="projFont">Yelp Favorites</p>
-                     <img src = "https://i.imgur.com/c2tqOt8.png" class= 'projectimg'>
-                </div>
-                <div class="cardFace back">
-                    <p> Search for businesses, add them to favotires for you to remember and other users to see
-                     Built with Angular, Bootstrap, Gulp, MongoDB</p>
-                <a href="https://github.com/mollywhitnack/refactoredYelp" target="_blank">                    
-                 <span class="fa fa-github fa-3x hover" aria-hidden="true"> </span></a>
-                <br><a href = 'https://powerful-cove-81123.herokuapp.com/' target="_blank"> 
-                 <br><i class="fa fa-2x fa-chevron-right" aria-hidden="true"></i>
-                </a>
-                </div>
-                </a>
-                </div>
-            </span>
-
-            <!--<span class ='cardWrapper'>
-                <div class = "card">
-                <div class="cardFace front"><p class="projFont">Cards against humanity</p>
-                     <img src = "https://i.imgur.com/JRm2SUw.png" class= 'projectimg'>
-                </div>
-                <div class="cardFace back">
-                <a href = 'https://radiant-cove-77490.herokuapp.com/#/' target="_blank"> Link</a>
-                    <p> Search for businesses, add them to favotires for you to remember and other users to see
-                    Built with Angular, Bootstrap, Node.js</p>
-                    <a href="https://github.com/mollywhitnack/cardsagainsthumanity" target="_blank">
-                     <span class="fa fa-github fa-3x hover" aria-hidden="true"> </span>
-                </div>
-                </a>
-                </div>
-            </span>
-
-            <span class ='cardWrapper'>
-                <div class = "card">
-                <div class="cardFace front"><p class="projFont">Mancala</p>
-                     <img src = "http://i.imgur.com/Gu13ATIr.png" class= 'projectimg'>
-                </div>
-                <div class="cardFace back">
-                <a href = 'https://mancala1991.herokuapp.com' target="_blank"> Link</a>
-                   <p> Built with React, Flux, Bootstrap, MongoDB </p>
-                <br><a href="https://github.com/mollywhitnack/Mancala" target="_blank">
-                 <span class="fa fa-github fa-3x hover" aria-hidden="true"> </span>
-                </div>
-                </a>
-                </div>
-            </span>-->
-   
+				<!--<a href="#gallery" class="smoothScroll btn btn-default">Projects</a>-->
+			</div>
+		</div>
+	</div>		
+</section>
 
 
-           <!-- <div class ='col-xs-6 col-centered col-fixed projects'> <a href = "https://radiant-cove-77490.herokuapp.com/#/" target="_blank"> Cards Against Humanity 
-                <img src = "https://i.imgur.com/JRm2SUw.png" class= 'projectimg'></a>
-                <br> Cards against humanity game 
-                <br> Built with Angular, Bootstrap, Node.js
-                <a href="https://github.com/mollywhitnack/cardsagainsthumanity" target="_blank">
-                    Github <span class="fa fa-github fa-2x hover" aria-hidden="true"> </span>
-                </a>
-                <br>
+<!-- gallery section -->
+<section id="gallery" class="parallax-section">
+	<div class="container">
 
-            </div>
-            
-            <div class ='col-xs-6 col-centered col-fixed projects'> <a href = "https://mancala1991.herokuapp.com"> Photo Album
-                <img src = "http://i.imgur.com/Gu13ATIr.png" class= 'projectimg'></a>
-                <br> Mancala
-                <br> Built with React, Flux, Bootstrap, MongoDB
-                <br><a href="https://github.com/mollywhitnack/Mancala" target="_blank">
-                Github <span class="fa fa-github fa-2x hover" aria-hidden="true"> </span>
-                </a>
-            
-            </div>-->
-        </div>
-    </div>
+		<div class="row">
 
-    </section>
+			<div class="col-md-offset-2 col-md-8 col-sm-12 text-center">
+				<h1 class="heading">Projects</h1>
+				<hr>
+			</div>
 
-    <!-- Services Section -->
-    <section id="services" class="services-section">
-        <div class="container">
-            <div class = "container aboutCont text-center">  
-              <span class = 'about text-center'>I am a critical-thinker, dependable, and sociable new graduate eager to obtain position as a full stack developer
-                <br>
-                <br> I love traveling, hanging out with my dogs and bulding things with my Arduinos
-                <br> I attended UCSD, where I received a B.S. in physics with a specialization in astrophysics and a minor in computer science.
-                <br> 
-                <br> Javascrpt | HTML | CSS | Mongo | Express | Angular | Node  | React
-                <br>
-                <br>Let me build something for you!
-              </span>
-            </div>
-        </div>        
-    </section>
+			<div class="col-md-4 col-sm-3 wow fadeInUp" data-wow-delay="0.1s">
+				<div class = "project">
+				<a href="https://the-daily-feels.herokuapp.com/" target="_blank" >
+					<img src="./images/dailyfeels.png" alt="gallery img" class = "projLink">
+				</a>
+				<div class = "projInfo">
+					<h3>The Daily Feels</h3>
+					<span>Emotion Sensitive News Search Engine. Displays articles analyzed for joy, sadness, disgust, fear, and anger.  
+					    <br> Technologies include React-Redux, webpack, and bluemix tone-analyzer</span>
+					<ul class="social-icon">
+					<li><a href ="https://github.com/mollywhitnack/the-daily-feels" target="_blank" class="fa fa-github wow bounceIn" data-wow-delay="0.3s"></a></li>
+				  </ul>
+				</div>
+				</div>
+			</div>
+
+			<div class="col-md-4 col-sm-3 wow fadeInUp" data-wow-delay="0.3s" >
+				<div class = "project">
+				<a href="https://mancala1991.herokuapp.com"  target="_blank" >
+					<img src="./images/mancala.png" alt="gallery img" class = "projLink"></a>
+				<div class = "projInfo">
+					<h3>Mancala</h3>
+					<span> 2 player Mancala board game, click board to moves stones from a hole on your side of the board. 
+					     <br>  Technologies include React-Flux, Bootstrap, MongoDB</span>
+					<br>
+				<ul class="social-icon">
+					<li><a href ="https://github.com/mollywhitnack/Mancala" target="_blank" class="fa fa-github wow bounceIn" data-wow-delay="0.3s"></a></li>
+				</ul>
+				</div>
+				</div>
+			</div>
+
+			<div class="col-md-4 col-sm-3 wow fadeInUp" data-wow-delay="0.5s">
+				<div class = "project">
+				<a href="https://powerful-cove-81123.herokuapp.com" target="_blank" >
+				<img src="./images/yelp.png" alt="gallery img" class = "projLink">
+				</a>
+				<div class = "projInfo">
+					<h3>Yelp Favorites</h3>
+					<span> Search for businesses, add them to favorites for you to remember and other users to see
+              <br> Technologies include Angular, Bootstrap, Gulp, MongoDB, and the Yelp API
+          </span>
+          <br>
+          <ul class="social-icon">
+					<li><a href ="https://github.com/mollywhitnack/refactoredYelp" target="_blank" class="fa fa-github wow bounceIn" data-wow-delay="0.3s"></a></li>
+				  </ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+</section>
+
+
+<!-- menu section -->
+<section id="menu" class="parallax-section">
+	<div class="container">
+		<!--<div class="row">
+			<div class="col-md-offset-2 col-md-8 col-sm-12 text-center">
+				<h1 class="heading">Download Resume</h1>
+				<ul class="social-icon">
+					<li><a href ="#" target="_blank" class="fa fa-arrow-circle-down wow bounceIn" data-wow-delay="0.3s"></a></li>
+				</ul>
+				<hr>
+			</div>-->
+			<div class="text-center">
+				<h1>Skills</h1>
+					<h3>HTML |  CSS  |  Javascript |  JQuery | Bootstrap</h3>
+					<h4> Java  |  MongoDB  |  MySQL   | SQLite |  Express   |   Angular 1  |  Node   |  React 
+				  		 Circuit Design  | Arduino | Gulp |  TDD | Oscilloscopes </h4>
+					<h5>C++   |   Firebase   |  Mathmatica   |  Matlab   |  LabView  | Python | SocketIo | PubNub | EJS Jade</h5>
+			<hr>
+			<h3>Education</h3>
+				<h4>University of California, San Diego -2015<h4>
+				<h5>B.S. Physics with a specialization in astrophysics <h5>
+				<h5>Minor Computer science</h5>
+			<hr>
+			</div>
+			<div class = "row text-center">
+			<h1 class="heading">Download Resume</h1>
+				<ul class="social-icon color">
+					<li><a href ="#" target="_blank" class="fa fa-arrow-circle-down wow bounceIn" data-wow-delay="0.3s"></a></li>
+				</ul>
+			</div>
+
+
+	</div>
+</section>		
+
+
+<!-- team section -->
+<section id="team" class="parallax-section">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-offset-2 col-md-8 col-sm-12 text-center">
+				<h1 class="heading">About</h1>
+				<hr>
+			</div>
+			<div class="col-md-4 col-sm-4 wow fadeInUp" data-wow-delay="0.3s">
+				<img src="images/me.jpg" class="img-responsive center-block" alt="team img">
+			</div>
+			<div class="col-md-6 col-sm-4 wow fadeInUp" data-wow-delay="0.6s">
+				<h3>Molly Whitnack</h3>
+				<p>Born and raised in Palo Alto . Lorem Ipsum is simply dummy text of the printing and 
+				   typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever 
+				   since the 1500s, when an unknown printer took a galley of type and scrambled it to 
+				   make a type specimen book. It has survived not only five centuries, but also the leap 
+				   into electronic typesetting, remaining essentially unchanged. It was popularised in the 
+				   1960s with the release of Letraset sheets containing L</p>
+			</div>
+		</div>
+	</div>
+</section>
 
 
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact-section">
-    <div class="container">   
-        <div class = "row faicons">
-                <a href ="https://angel.co/molly-whitnack" target="_blank"><i class="fa fa-angellist fa-2x hover" aria-hidden="true"><p class = "text"></p></i></a>
-                <a href ="https://twitter.com/MollyWhitnack" target="_blank"><i class="fa fa-twitter fa-2x hover" aria-hidden="true"><p class = "text"></p></i></a>
-                <a href = "https://github.com/mollywhitnack" target="_blank"><i class="fa fa-github fa-2x hover" aria-hidden="true"><p class = "text"></p></i></a>
-                <a href = "http://stackoverflow.com/users/6073965/molly-whitnack" target="_blank"><i class="fa fa-stack-overflow fa-2x hover" aria-hidden="true"><p class = "text"></p></i></a>
-                <a href="https://www.linkedin.com/in/molly-whitnack-55525b9a" target="_blank"><i class="fa fa-linkedin fa-2x hover" aria-hidden="true"><p class = "text"></p></i></a>
-            </div>
-            <br>
-            <i class="fa fa-arrow-circle-down fa-2x" aria-hidden="true"></i>
-            <div class = "text-center resumeFrame">
-              <iframe src="https://docs.google.com/document/d/1xuZ3U1xNkojCjbw8nDBxzsU05K3FI-0oxvD8QE-mCos/pub?embedded=true" frameborder="0">  </iframe>
 
-          </div>
-              <a href="https://docs.google.com/document/d/1xuZ3U1xNkojCjbw8nDBxzsU05K3FI-0oxvD8QE-mCos/export?format=pdf">
-     
-   </a>
-      </div>
-  </section>
+<!-- footer section -->
+<footer id ="contact" class="parallax-section" >
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4 col-sm-4 wow fadeInUp" data-wow-delay="0.6s">
+				<h2 class="heading">Contact Info.</h2>
+				<div class="ph">
+					<p><i class="fa fa-phone"></i> Phone</p>
+					<h4>650-380-3146</h4>
+				</div>
+				
+			</div>
+			<div class="col-md-4 col-sm-4 wow fadeInUp" data-wow-delay="0.6s">
+				<h2 class="heading"><br></h2>
+				<div class="address">
+					<p><i class="fa fa-map-marker"></i> Address</p>
+					<h4>825 Addison Ave,<br> California, USA<br> 94301</h4>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-4 wow fadeInUp" data-wow-delay="0.6s">
+				<h2 class="heading"><br></h2>
+				<div class="address">
+					<p><i class="fa fa-envelope"></i> Email</p>
+					<h4>mollywhitnack@gmail.com</h4>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</footer>
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+<!-- copyright section -->
+<section id="copyright">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 col-sm-12">
 
-    <!-- Scrolling Nav JavaScript -->
-    <script src="js/jquery.easing.min.js"></script>
-    <script src="js/scrolling-nav.js"></script>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- JAVASCRIPT JS FILES -->	
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.parallax.js"></script>
+<script src="js/smoothscroll.js"></script>
+<!--<script src="js/nivo-lightbox.min.js"></script>-->
+<script src="js/wow.min.js"></script>
+<script src="js/custom.js"></script>
 
 </body>
-
 </html>
