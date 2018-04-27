@@ -53,11 +53,11 @@ hr {
 	width: 120px;
 }
 
-#menu, #gallery, #team, #contact {
+#resume, #projects, #aboutMe, #contact {
 	padding-top: 100px;
 	padding-bottom: 100px;
 }
-#menu {
+#resume {
   background: #f0f0f0;
 }
 
@@ -215,19 +215,19 @@ hr {
   padding-top: 5px;
 }
 
-/* team section */
-#team {
+/* aboutMe section */
+#aboutMe {
   height: 100vh;
 }
-#team h3 {
+#aboutMe h3 {
   font-size: 18px;
   line-height: 4px;
 }
-#team h4 {
+#aboutMe h4 {
   color: #5C5C5C;
   padding-top: 24px;
 }
-#team .col-md-4 {
+#aboutMe .col-md-4 {
  padding-top: 0px;
 }
 
@@ -243,21 +243,21 @@ hr {
 .right{
   margin-bottom: 50px;
 }
-/* menu section */
-#menu{
+/* resume section */
+#resume{
 
 }
 
-#menu h4 {
+#resume h4 {
 	/*line-height: 1.5;*/
 }
-#menu .col-md-8 {
+#resume .col-md-8 {
   padding-bottom: 42px;
 }
-#menu .col-md-6 {
+#resume .col-md-6 {
   padding-bottom: 18px;
 }
-#menu span {
+#resume span {
   color: #5C5C5C;
 }
 .skills1{
@@ -269,31 +269,31 @@ hr {
 .skills3{
   color:#8c8c8c
 }
-/* gallery section */
-#gallery {
+/* projects section */
+#projects {
   padding-top: 80px;
   padding-bottom: 80px;
 }
-#gallery .col-md-4 {
+#projects .col-md-4 {
   padding-top: 52px;
 }
-#gallery img {
+#projects img {
   width: 100%;
   box-shadow: 3px 3px 5px #888888;
   /*border: 5px double #cccccc;*/ 
   padding-bottom: 0px;
 }
-#gallery img:hover {
+#projects img:hover {
   width: 100%;
   box-shadow: 10px 10px 5px #888888;
   padding-bottom: 0px;
 }
-#gallery .col-md-4 div {
+#projects .col-md-4 div {
   position: relative;
   bottom: 18px;
   padding-bottom: 12px;
 }
-#gallery h3 {
+#projects h3 {
   font-size: 18px;
   line-height: 8px;
 }
@@ -301,6 +301,7 @@ hr {
 #contact{
   height: 90vh;
 }
+
 
 /* footer section */
 footer {
@@ -347,7 +348,8 @@ footer .fa {
   padding: 0;
 }
 .social-icon li a {
-  background: #f0f0f0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background: white;
   border-radius: 50%;
   color: #5C5C5C;
   font-size: 16px;
@@ -370,7 +372,7 @@ footer .fa {
 
 .colorIcon{
   border-radius: 50%;
-  background: #79b999;
+  background: #67ced8;
   color: white;
   font-size: 16px;
   width: 48px;

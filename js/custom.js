@@ -18,21 +18,21 @@ $(function(){
   // ------- JQUERY PARALLAX ---- //
   function initParallax() {
     $('#home').parallax("100%", 0.1);
-    $('#gallery').parallax("100%", 0.3);
-    $('#menu').parallax("100%", 0.2);
-    $('#team').parallax("100%", 0.3);
+    $('#projects').parallax("100%", 0.3);
+    $('#resume').parallax("100%", 0.2);
+    $('#aboutMe').parallax("100%", 0.3);
     $('#contact').parallax("100%", 0.1);
 
   }
   initParallax();
 
-  // HIDE MOBILE MENU AFTER CLIKING ON A LINK
+  // HIDE MOBILE resume AFTER CLIKING ON A LINK
   $('.navbar-collapse a').click(function(){
         $(".navbar-collapse").collapse('hide');
     });
 
   // NIVO LIGHTBOX
- /* $('#gallery a').nivoLightbox({
+ /* $('#projects a').nivoLightbox({
         effect: 'fadeScale',
     });*/
 
